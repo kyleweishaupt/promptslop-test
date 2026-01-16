@@ -8,6 +8,6 @@
     <h1><?php echo htmlspecialchars($postData['title']); ?></h1>
     <p><?php echo nl2br(htmlspecialchars($postData['content'])); ?></p>
     <small><?php echo $postData['created_at']; ?></small>
-    <a href="/posts">Back to Posts</a>
+    <a href="/posts" class="btn">Back to Posts</a>
 </body>
 </html>

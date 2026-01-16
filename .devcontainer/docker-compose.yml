@@ -4,15 +4,15 @@ services:
     ports:
       - "8080:80"
     volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf:ro
-      - .:/var/www/html:ro
+      - ../nginx.conf:/etc/nginx/nginx.conf:ro
+      - ..:/var/www/html:rw
     depends_on:
       - php
 
   php:
-    build: .
+    build: ..
     volumes:
-      - .:/var/www/html:rw
+      - ..:/var/www/html:rw
       - db_data:/var/www/html/database
     working_dir: /var/www/html
 

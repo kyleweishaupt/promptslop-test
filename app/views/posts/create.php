@@ -7,10 +7,10 @@
 <body>
     <h1>Create Post</h1>
     <form method="post" action="/posts">
-        <input type="text" name="title" placeholder="Title" required>
-        <textarea name="content" placeholder="Content" required></textarea>
-        <button type="submit">Create</button>
-    </form>
-    <a href="/posts">Back to Posts</a>
+            <input type="text" name="title" placeholder="Title" required>
+            <textarea name="content" placeholder="Content" required minlength="10"></textarea>
+            <button type="submit" class="btn">Create</button>
+        </form>
+        <a href="/posts" class="btn">Back to Posts</a>
 </body>
 </html>
